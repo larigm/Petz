@@ -2,12 +2,12 @@
   O objetivo do projeto é implementar progressivamente e de forma didática uma aplicação web inspirada em um cadastro de adoção e doação de animais. O frontend da aplicação foi desenvolvido com HTML, CSS e JavaScript e o backend foi simulado pela implementação de uma API Fake, usando o JSON Server.
   Design das Telas - Figma:
 
-  Design System:
+  **Design System:**
 Link para o PDF
 
-Site em Produção - GitHub Pages
+**Site em Produção - GitHub Pages**
 
-Framework CSS
+**Framework CSS**
 
 ## **Checklist | Indicadores de Desempenho (ID) dos Resultados de Aprendizagem (RA)**
 
