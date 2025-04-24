@@ -1,0 +1,27 @@
+{
+  "name": "petz",
+  "version": "1.0.0",
+  "description": "O objetivo do projeto é implementar progressivamente e de forma didática uma aplicação web inspirada em um cadastro de adoção e doação de animais. O frontend da aplicação foi desenvolvido com HTML, CSS e JavaScript e o backend foi simulado pela implementação de uma API Fake, usando o JSON Server.\r   Design das Telas - Figma:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/larigm/Petz.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/larigm/Petz/issues"
+  },
+  "homepage": "https://github.com/larigm/Petz#readme",
+  "dependencies": {
+    "jquery": "^3.7.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
