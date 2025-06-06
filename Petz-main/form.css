@@ -1,0 +1,151 @@
+/* ===== FONTE ===== */
+.shippori-mincho-regular {
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.shippori-mincho-medium {
+  font-family: "Shippori Mincho", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.shippori-mincho-semibold {
+  font-family: "Shippori Mincho", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.shippori-mincho-bold {
+  font-family: "Shippori Mincho", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.shippori-mincho-extrabold {
+  font-family: "Shippori Mincho", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.html {
+  font-family: "Mulish", sans-serif;
+}
+
+/* ===== NAVBAR / BOTÕES ===== */
+.duvida {
+  font-size: 12px;
+  font-family: "Mulish", sans-serif;
+  color: white;
+  background-color: #17479E;
+  border-left: 20px;
+  padding: 15px;
+}
+
+
+.btn-outline-primary {
+  color: #17479E !important;
+  border: 2px solid #17479E !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: #17479E !important;
+  color: white !important;
+}
+
+.hamburger-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 22px;
+}
+
+.hamburger-line {
+  width: 100%;
+  height: 3px;
+  background-color: #17408B;
+  border-radius: 2px;
+}
+
+.hamburger-line-center {
+  width: 70%;
+  height: 3px;
+  background-color: #17408B;
+  border-radius: 2px;
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse.show {
+    background-color: #003087;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  .navbar-collapse.show .nav-link {
+    color: white;
+  }
+}
+
+/* formulario */
+    .top-bar {
+      background-color: #c8b4d9;
+      height: 200px;
+      color: #5e4b6e;
+      text-align: center;
+      padding-top: 20px;
+    }
+
+    .form-container {
+      margin-top: -100px;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+      padding: 30px;
+      max-width: 600px;
+    }
+
+    .form-label {
+      font-weight: 600;
+    }
+
+    .form-control, .form-select {
+      background-color: #f1f1f1;
+      border: none;
+         color: #808080;
+    }
+
+    .form-control:focus, .form-select:focus {
+      box-shadow: none;
+      border: 1px solid #ccc;
+    }
+
+    .btn-orange {
+      background-color: #f9a870;
+      color: white;
+      font-weight: 600;
+      border: none;
+    }
+
+    .btn-orange:hover {
+      background-color: #e69054;
+    }
+
+    .top-links {
+      font-size: 14px;
+      padding-top: 10px;
+    }
+
+    .top-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+
+    .top-links a:hover {
+      text-decoration: underline;
+    }

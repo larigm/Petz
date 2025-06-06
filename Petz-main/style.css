@@ -1,0 +1,244 @@
+/* ===== FONTE ===== */
+.shippori-mincho-regular {
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.shippori-mincho-medium {
+  font-family: "Shippori Mincho", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.shippori-mincho-semibold {
+  font-family: "Shippori Mincho", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.shippori-mincho-bold {
+  font-family: "Shippori Mincho", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.shippori-mincho-extrabold {
+  font-family: "Shippori Mincho", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.html {
+  font-family: "Mulish", sans-serif;
+}
+
+/* ===== NAVBAR / BOTÕES ===== */
+.btn-outline-primary {
+  color: #17479E !important;
+  border: 2px solid #17479E !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: #17479E !important;
+  color: white !important;
+}
+
+.hamburger-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 22px;
+}
+
+.hamburger-line {
+  width: 100%;
+  height: 3px;
+  background-color: #17408B;
+  border-radius: 2px;
+}
+
+.hamburger-line-center {
+  width: 70%;
+  height: 3px;
+  background-color: #17408B;
+  border-radius: 2px;
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse.show {
+    background-color: #003087;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  .navbar-collapse.show .nav-link {
+    color: white;
+  }
+}
+
+/* ===== CONTAINERS / TEXTOS ===== */
+.container-petz {
+  font-weight: normal;
+  color: #757575;
+}
+
+h1 {
+  color: #555;
+  font-family: 'Mulish', sans-serif;
+  font-weight: lighter;
+  font-size: 30px;
+}
+
+p, .card-text, .card-title {
+  color: #555;
+  font-family: 'Mulish', sans-serif;
+}
+
+.petz {
+  color: #555;
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+}
+
+.duvida {
+  font-size: 12px;
+  font-family: "Mulish", sans-serif;
+  color: white;
+  background-color: #17479E;
+  border-left: 20px;
+  padding: 15px;
+}
+
+/* ===== CARDS ===== */
+.card-title {
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+.card.posts {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-shadow:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== CONTADOR ===== */
+.contador-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.contador-texto {
+  position: absolute;
+  bottom: 200px;
+  left: 30%;
+  line-height: 1.4;
+  transform: translateX(-50%);
+  display: inline-block;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contador-numero {
+  display: inline-block;
+  background-color: #c6b3e5;
+  color: white;
+  padding: 0.3em 0.5em;
+  border-radius: 5px;
+  font-size: 2rem;
+}
+
+/* ===== CARROSSEL / BOTÃO SAIBA MAIS ===== */
+.carousel-caption-container {
+  position: relative;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+  color: white;
+}
+
+.btn-saiba-mais {
+  position: absolute;
+  display: inline-block;
+  bottom: 20%;
+  left: 50%;
+  margin-top: 1rem;
+  background-color: #ffa96b;
+  color: white;
+  padding: 0.7em 1.5em;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background-color: #144A9C;
+  position: relative;
+  z-index: 1;
+}
+
+.footer h6 {
+  color: #F9A870;
+  margin-bottom: 1rem;
+}
+
+.footer li {
+  color: white;
+  font-weight: lighter;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.footer p {
+  color: white;
+  font-weight: lighter;
+  font-size: 12px;
+}
+
+.faq-box {
+  background-color: #F9A870;
+  width: 80%;
+  border-radius: 10px;
+  margin-bottom: -60px;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== AJUSTES GERAIS ===== */
+br {
+  display: inline-block;
+}

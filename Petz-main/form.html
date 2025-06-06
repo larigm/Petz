@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cadastro de Animais</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+     <style>@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Shippori+Mincho:wght@400;500;600;700;800&display=swap');</style>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+<!-- navbar -->
+<!--   menu -->
+  <div class="col">
+    <h6 class="duvida d-none d-lg-block">Duvidas?</h6>
+  </div>
+    <!-- nav -->
+   <nav class="navbar navbar-expand-lg  navbar-light bg-light px-4 py-3 d-flex justify-content-center ">
+  <div class="container-fluid" style="max-width: 1140px;">
+    <a class="navbar-brand " href="index.html"> 
+      <img class="img-fluid navbar-brand mx-auto order-2 d-flex align-items-center justify-content-between" style="width: 190px; " src="fotos/image.png" alt="">
+    </a>
+    <!-- Botão do menu hamburguer personalizado -->
+<button class="hamburger-btn d-lg-none p-0 border-0 order-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+  <span class="hamburger-line"></span>
+  <span class="hamburger-line-center"></span>
+  <span class="hamburger-line"></span>
+</button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item me-1 dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarNavDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Institucional
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarNavDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item me-1">
+          <a class="nav-link" href="#">ONGs/Protetores</a>
+        </li>
+        <li class="nav-item me-1">
+          <a class="nav-link" href="#">Unidades Petz</a>
+        </li>
+        <li class="nav-item me-1">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+        <!-- Exibe só no mobile -->
+<div class="d-lg-none ">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="painel.html">Quero adotar</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="form.html">Divulgar um animal</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="form.html">Entrar</a>
+    </li>
+  </ul>
+</div>
+        <li class="nav-item me-1 dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            FAQ
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">FAQ Item 1</a></li>
+            <li><a class="dropdown-item" href="#">FAQ Item 2</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">FAQ Item 3</a></li>
+          </ul>
+
+        </li>
+      </ul>
+      
+      <!-- Botões fora da <ul> -->
+      <!-- Mostra só em telas médias pra cima (menu desktop) -->
+<div class="d-none d-lg-flex gap-2">
+  <span class="material-icons" style="color: #F9A870; padding-top: 7px;">favorite_border</span>
+  <a href="painel.html" class="btn" style="background-color: #F9A870; color: white;">Quero adotar</a>
+  <a type="button" href="form.html" class="btn btn-outline-primary">Divulgar um animal</a>
+  <a type="button" class="btn btn-outline-primary">Entrar</a>
+</div>
+    </div>
+  </div>
+</nav>
+    <!-- formulario -->
+  <div class="top-bar">
+    <div class="top-links">
+      <a href="index.html">Home</a> | <a href="#">Entrar</a>
+    </div>
+    <h2>Cadastro de animais</h2>
+  </div>
+  <div class="container d-flex justify-content-center">
+    <div class="form-container w-100">
+      <h5 class="mb-4">Preencha as informações do animal</h5>
+      <form>
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Nome do animal*" required>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <select  class="form-select" required>
+              <option  selected disabled>Espécie*</option>
+              <option>Cachorro</option>
+              <option>Gato</option>
+              <option>Outro</option>
+            </select>
+          </div>
+          <div class="col-md-6 mb-3">
+            <select class="form-select" required>
+              <option selected disabled>Sexo*</option>
+              <option>Macho</option>
+              <option>Fêmea</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <select class="form-select" required>
+              <option selected disabled>Idade*</option>
+              <option>Filhote</option>
+              <option>Adulto</option>
+              <option>Idoso</option>
+            </select>
+          </div>
+          <div class="col-md-6 mb-3">
+            <select class="form-select" required>
+              <option selected disabled>Porte*</option>
+              <option>Pequeno</option>
+              <option>Médio</option>
+              <option>Grande</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <select class="form-select" required>
+              <option selected disabled>Estado*</option>
+              <option>PR</option>
+              <option>SP</option>
+              <option>RJ</option>
+              <!-- adicione os outros estados -->
+            </select>
+          </div>
+          <div class="col-md-6 mb-3">
+            <select class="form-select" required>
+              <option selected disabled>Cidade*</option>
+              <option>Guarapuava</option>
+              <option>Curitiba</option>
+              <option>Londrina</option>
+              <!-- adicione outras -->
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <input type="text" class="form-control" placeholder="Peso*" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <input type="text" class="form-control" placeholder="Microchip">
+          </div>
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" rows="3" placeholder="Sobre o animal"></textarea>
+        </div>
+    <div class="mb-3">
+  <div class="input-group">
+    <!-- Input escondido -->
+    <input type="file" id="foto" class="d-none" accept="image/*">
+    <!-- Campo visível para o nome do arquivo ou link -->
+    <input 
+      type="url" 
+      class="form-control" 
+      id="inputFoto" 
+      placeholder="Insira o link ou clique no ícone para anexar" 
+      readonly>
+    <!-- Botão com ícone para acionar o input file -->
+    <span 
+      class="input-group-text" 
+      style="cursor: pointer;" 
+      onclick="document.getElementById('foto').click();">
+      <img src="fotos/icons/Vector.png" alt="ícone" style="width: 20px;">
+    </span>
+  </div>
+</div>
+<script>
+  const inputFile = document.getElementById('foto');
+  const inputTexto = document.getElementById('inputFoto');
+
+  inputFile.addEventListener('change', function () {
+    if (this.files.length > 0) {
+      inputTexto.value = this.files[0].name;
+    }
+  });
+</script>
+
+
+
+        <button type="submit" class="btn btn-orange w-100">Entrar</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
