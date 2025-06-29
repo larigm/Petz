@@ -2,7 +2,8 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-
+    <!-- animatecss -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- google font -->
     <style>@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Shippori+Mincho:wght@400;500;600;700;800&display=swap');</style>
@@ -10,92 +11,14 @@
       rel="stylesheet">
       <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <!-- style.css -->
+    <link rel="stylesheet" href="/Petz-main/assets/resources/style/style.css">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <title>Adote Petz</title>
 </head>
 <body>
-<!--   menu -->
-  <div class="col">
-    <h6 class="duvida d-none d-lg-block">Duvidas?</h6>
-  </div>
-    <!-- nav -->
-   <nav class="navbar navbar-expand-lg  navbar-light bg-light px-4 py-3 d-flex justify-content-center ">
-  <div class="container-fluid" style="max-width: 1140px;">
-    <a class="navbar-brand " href="index.html"> 
-      <img class="img-fluid navbar-brand mx-auto order-2 d-flex align-items-center justify-content-between" style="width: 190px; " src="fotos/image.png" alt="">
-    </a>
-    <!-- Botão do menu hamburguer personalizado -->
-<button class="hamburger-btn d-lg-none p-0 border-0 order-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-  <span class="hamburger-line"></span>
-  <span class="hamburger-line-center"></span>
-  <span class="hamburger-line"></span>
-</button>
-    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-      <ul class="navbar-nav mb-2 mb-lg-0">
-        <li class="nav-item me-1 dropdown">
-          <a class="nav-link dropdown-toggle" id="navbarNavDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Institucional
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarNavDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item me-1">
-          <a class="nav-link" href="#">ONGs/Protetores</a>
-        </li>
-        <li class="nav-item me-1">
-          <a class="nav-link" href="#">Unidades Petz</a>
-        </li>
-        <li class="nav-item me-1">
-          <a class="nav-link" href="#">Blog</a>
-        </li>
-        <!-- Exibe só no mobile -->
-<div class="d-lg-none ">
-  <ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link" href="painel.html">Quero adotar</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="form.html">Divulgar um animal</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="form.html">Entrar</a>
-    </li>
-  </ul>
-</div>
-        <li class="nav-item me-1 dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            FAQ
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">FAQ Item 1</a></li>
-            <li><a class="dropdown-item" href="#">FAQ Item 2</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">FAQ Item 3</a></li>
-          </ul>
-
-        </li>
-      </ul>
-      
-      <!-- Botões fora da <ul> -->
-      <!-- Mostra só em telas médias pra cima (menu desktop) -->
-<div class="d-none d-lg-flex gap-2">
-  <span class="material-icons" style="color: #F9A870; padding-top: 7px;">favorite_border</span>
-  <a href="painel.html" class="btn" style="background-color: #F9A870; color: white;">Quero adotar</a>
-  <a type="button" href="form.html" class="btn btn-outline-primary">Divulgar um animal</a>
-  <a type="button" class="btn btn-outline-primary">Entrar</a>
-</div>
-
-
-
-    </div>
-  </div>
-</nav>
+<div id="navbar-placeholder"></div>
 <!-- carrossel -->
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
@@ -105,7 +28,7 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active" data-bs-interval="2000">
-      <img src="fotos/carrossel/Picture → Banner sobre o programa adote petz.png" class="d-block w-100" alt="...">
+      <img src="../assets/resources/images/carrossel/Picture → Banner sobre o programa adote petz.png" class="d-block w-100" alt="...">
     <p class="contador-texto">
   O Programa Adote Petz já <br> ajudou
   <span id="contador" class="contador-numero">0</span> pets a <br> encontrarem um lar.
@@ -113,13 +36,13 @@
   <button type="button" class="btn-saiba-mais" style="background-color: #F9A870; color: white;">Quero adotar</button>
     </div>
      <div class="carousel-item">
-      <img src="fotos/carrossel/1.png" class="d-block w-100" alt="...">
+      <img src="../assets/resources/images/carrossel/1.png" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="fotos/carrossel/2.png" class="d-block w-100" alt="...">
+      <a href="painel.html"><img src="../assets/resources/images/carrossel/2.png" class="d-block w-100" alt="..."></a>
     </div>
     <div class="carousel-item">
-      <img src="fotos/carrossel/3.png" class="d-block w-100" alt="...">
+      <img src="../assets/resources/images/carrossel/3.png" class="d-block w-100" alt="...">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -134,8 +57,8 @@
 
 <!-- texto simples -->
 <div class="container-petz text-center mt-5">
-    <h1>Conheça o Adote Petz</h1>
-    <p>Nós fazemos a conexão entre quem deseja adotar um pet com uma rede de mais de 140 ONGs e protetores parceiros. Funciona assim: a Petz disponibiliza <br>
+    <h1 class="animate__animated animate__fadeInDown">Conheça o Adote Petz</h1>
+    <p class="animate__animated animate__fadeInUp">Nós fazemos a conexão entre quem deseja adotar um pet com uma rede de mais de 140 ONGs e protetores parceiros. Funciona assim: a Petz disponibiliza <br>
 espaços especialmente dedicados para a adoção no centro de suas lojas e as ONGs/protetores parceiros ficam responsáveis pelo processo e entrevista com os br
 potenciais adotantes. Juntos somos mais fortes!</p>
   </div>
@@ -147,7 +70,7 @@ potenciais adotantes. Juntos somos mais fortes!</p>
     <div class="card h-100 text-center " style=" border-radius: 20px; border: 2px solid #BBBBBB;">
   <div class="card-body d-flex flex-column">
     <div class="d-flex justify-content-center mb-3">
-      <img src="fotos/icons/pata.png" alt="Ícone Petz" style="width: 7.5rem;">
+      <img src="../assets/resources/images/icons/pata.png" alt="Ícone Petz" style="width: 7.5rem;">
     </div>
     <p class="card-text" style="color: #555; font-family: 'Mulish', sans-serif; font-size: 1rem; text-align: justify;">
       Visite uma loja Petz com espaço de adoção e conheça pets de ONGs parceiras para encontrar seu novo amigo. Veja as lojas 
@@ -161,7 +84,7 @@ potenciais adotantes. Juntos somos mais fortes!</p>
       <div class="card h-100 text-center " style=" border-radius: 20px; border: 2px solid #BBBBBB;">
   <div class="card-body d-flex flex-column">
     <div class="d-flex justify-content-center mb-3">
-      <img src="fotos/icons/Background.png" alt="Ícone Petz" style="width: 7.5rem;">
+      <img src="../assets/resources/images/icons/Background.png" alt="Ícone Petz" style="width: 7.5rem;">
     </div>
     <p class="card-text" style="color: #555; font-family: 'Mulish', sans-serif; font-size: 1rem; text-align: justify;">
       Faça a entrevista na hora com um voluntário da ONG. Se não houver um presente, preencha o formulário e aguarde o contato em até 48h.
@@ -175,7 +98,7 @@ potenciais adotantes. Juntos somos mais fortes!</p>
         <div class="card h-100 text-center " style=" border-radius: 20px; border: 2px solid #BBBBBB;">
   <div class="card-body d-flex flex-column">
     <div class="d-flex justify-content-center mb-3">
-      <img src="fotos/icons/Grupo_2252.svg fill.png" alt="Ícone Petz" style="width: 7.5rem;">
+      <img src="../assets/resources/images/icons/Grupo_2252.svg fill.png" alt="Ícone Petz" style="width: 7.5rem;">
     </div>
     <p class="card-text" style="color: #555; font-family: 'Mulish', sans-serif; font-size: 1rem; text-align: justify;">
       A ONG/protetor analisará seu perfil e o do pet. Se aprovado, você recebe a resposta na hora (em entrevistas presenciais) ou por telefone/e-mail (via formulário online).
@@ -188,7 +111,7 @@ potenciais adotantes. Juntos somos mais fortes!</p>
         <div class="card h-100 text-center " style=" border-radius: 20px; border: 2px solid #BBBBBB;">
   <div class="card-body d-flex flex-column">
     <div class="d-flex justify-content-center mb-3">
-      <img  src="fotos/icons/adocao completa.png" alt="Ícone Petz" style="width: 7.5rem;">
+      <img  src="../assets/resources/images/icons/adocao completa.png" alt="Ícone Petz" style="width: 7.5rem;">
     </div>
     <p class="card-text" style="color: #555; font-family: 'Mulish', sans-serif; font-size: 1rem; text-align: justify;">
       Se aprovado na hora, você já pode levar seu pet para casa! Caso tenha enviado o formulário online, aguarde o contato e, após a aprovação, retire seu pet na loja.
@@ -221,12 +144,12 @@ recebimento é realizada diretamente entre o adotante e ONG/protetor parceiro.</
       <button type="button" class="btn mt-3" style="background-color: #F9A870; color: white; align-items: center;">Saiba mais</button>
     </div>
     <!-- Coluna 2: Vídeo -->
-    <div class="col-lg-6 d-flex justify-content-center mt-4 mt-lg-0">
-      <video width="100%" style="max-width: 450px;" controls>
-        <source src="fotos/video/adote-petz.mp4" type="video/mp4">
-        Seu navegador não suporta a tag de vídeo.
-      </video>
+   <div class="col-lg-6 d-flex justify-content-center mt-4 mt-lg-0">
+
+    <div class="ratio ratio-16x9" style="max-width: 450px;">
+        <iframe src="https://www.youtube.com/embed/93sHyLy1TkA?si=UcZ0o3NpvsijjMA1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
+</div>
   </div>
 </div>
 
@@ -244,7 +167,7 @@ recebimento é realizada diretamente entre o adotante e ONG/protetor parceiro.</
     <!-- Card 1 -->
     <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
       <div class="card shadow-sm rounded-4 w-100">
-        <img src="fotos/posts/filhote-de-cachorro-de-estimacao-completo.jpg" class="card-img-top rounded-top-4" alt="...">
+        <img src="../assets/resources/images/posts/filhote-de-cachorro-de-estimacao-completo.jpg" class="card-img-top rounded-top-4" alt="...">
         <div class="card-body">
           <p class="mb-1" style="color: #F9A870; font-size: 13px;">ADOÇÃO</p>
           <h5 class="card-title mb-2">Adoção de cães: como e onde adotar</h5>
@@ -256,7 +179,7 @@ recebimento é realizada diretamente entre o adotante e ONG/protetor parceiro.</
     <!-- Card 2 -->
     <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
       <div class="card shadow-sm rounded-4 w-100">
-        <img src="fotos/posts/pexels-ezz7-979503.jpg" class="card-img-top rounded-top-4" alt="...">
+        <img src="../assets/resources/images/posts/pexels-ezz7-979503.jpg" class="card-img-top rounded-top-4" alt="...">
         <div class="card-body">
           <p class="mb-1" style="color: #F9A870; font-size: 13px;">ADOÇÃO</p>
           <h5 class="card-title mb-2">8 dicas de como resgatar animais abandonados</h5>
@@ -268,7 +191,7 @@ recebimento é realizada diretamente entre o adotante e ONG/protetor parceiro.</
     <!-- Card 3 -->
     <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
       <div class="card shadow-sm rounded-4 w-100">
-        <img src="fotos/posts/jametlene-reskp-jJny5dOfOHE-unsplash.jpg" class="card-img-top rounded-top-4" alt="...">
+        <img src="../assets/resources/images/posts/jametlene-reskp-jJny5dOfOHE-unsplash.jpg" class="card-img-top rounded-top-4" alt="...">
         <div class="card-body">
           <p class="mb-1" style="color: #F9A870; font-size: 13px;">ADOÇÃO</p>
           <h5 class="card-title mb-2">Vantagens de ter um gato: descubra 7 motivos para ter um bichano por perto</h5>
@@ -280,7 +203,7 @@ recebimento é realizada diretamente entre o adotante e ONG/protetor parceiro.</
     <!-- Card 4 -->
     <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
       <div class="card shadow-sm rounded-4 w-100">
-        <img src="fotos/posts/pexels-mnannapaneni-11109404.jpg" class="card-img-top rounded-top-4" alt="...">
+        <img src="../assets/resources/images/posts/pexels-mnannapaneni-11109404.jpg" class="card-img-top rounded-top-4" alt="...">
         <div class="card-body">
           <p class="mb-1" style="color: #F9A870; font-size: 13px;">ADOÇÃO</p>
           <h5 class="card-title mb-2">Conheça 7 vantagens de ter um cachorro em casa</h5>
@@ -297,7 +220,7 @@ recebimento é realizada diretamente entre o adotante e ONG/protetor parceiro.</
 <!-- container parceiros -->
 <div class="container-parceiros text-center mt-6">
   <h1 style="color: #555; font-family: 'Mulish', sans-serif;">Os nossos parceiros</h1>
-  <img src="fotos/parceiros/Container.png" class="img-fluid" style="padding: 30px; max-width: 100%; height: auto;">
+  <img src="../assets/resources/images/parceiros/Container.png" class="img-fluid" style="padding: 30px; max-width: 100%; height: auto;">
 </div>
 
 
@@ -316,13 +239,13 @@ conosco que teremos o maior prazer em ajudar você.</p>
     <div class="row">
       <!-- Coluna 1 -->
       <div class="col-lg-4 mb-4">
-        <img src="fotos/rodape/Rodape.png" style="width: 7.5rem; margin-top: 30px;" alt="Logo Adote Petz">
+        <img src="../assets/resources/images/rodape/Rodape.png" style="width: 7.5rem; margin-top: 30px;" alt="Logo Adote Petz">
         <p class="mt-3" style="font-size: 14px;">
           Adote Petz é um programa criado para estreitar laços entre pessoas que têm o sonho de adotar um pet e nossas ONGs e protetores parceiros. Vamos juntos incentivar a adoção, conscientizar sobre a posse responsável e fomentar a cultura de doação em prol do bem-estar animal.
         </p>
         <div class="d-flex gap-3 mt-3">
-          <img src="fotos/rodape/facebook.png" style="width: 1.25rem;" alt="Facebook">
-          <img src="fotos/rodape/instagram.png" style="width: 1.25rem;" alt="Instagram">
+          <img src="../assets/resources/images/rodape/facebook.png" style="width: 1.25rem;" alt="Facebook">
+          <img src="../assets/resources/images/rodape/instagram.png" style="width: 1.25rem;" alt="Instagram">
         </div>
       </div>
 
@@ -353,7 +276,7 @@ conosco que teremos o maior prazer em ajudar você.</p>
   </div>
 </footer>
 
-
-<script src="index.js"></script>
+<script src="../assets/resources/scripts/main.js"></script>
+<script src="../assets/resources/scripts/index.js"></script>
 </body>
 </html>
