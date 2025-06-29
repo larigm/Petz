@@ -242,3 +242,42 @@ p, .card-text, .card-title {
 br {
   display: inline-block;
 }
+
+/* ===== TIPOGRAFIA RESPONSIVA ===== */
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+
+  .contador-numero {
+    font-size: 1.5rem;
+  }
+
+  .contador-texto {
+    font-size: 1.2rem;
+  }
+
+  .duvida {
+    font-size: 10px;
+  }
+
+  .petz {
+    font-size: 14px;
+  }
+}

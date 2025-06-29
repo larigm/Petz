@@ -1,0 +1,52 @@
+{
+  "animais": [
+    {
+      "id": "1",
+      "nome": "Flocão",
+      "especie": "Cachorro",
+      "sexo": "Macho",
+      "idade": "Adulto",
+      "porte": "Médio",
+      "estado": "SP",
+      "cidade": "São Paulo",
+      "sobre": "Um cão muito dócil e amigável, adora brincar.",
+      "foto": "https://i.imgur.com/v2a0y9w.jpeg"
+    },
+    {
+      "id": "a301",
+      "nome": "Larissa Gomes Machado",
+      "especie": "Cachorro",
+      "sexo": "Macho",
+      "idade": "Filhote",
+      "porte": "Pequeno",
+      "estado": "PE",
+      "cidade": "ARARIPINA",
+      "sobre": "dócil",
+      "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd79iHI8IJ09kf1prQYC6DrcRy2m3rpIHF8g&s"
+    },
+    {
+      "id": "1c46",
+      "nome": "Larissa Gomes Machado",
+      "especie": "Gato",
+      "sexo": "Macho",
+      "idade": "Filhote",
+      "porte": "Pequeno",
+      "estado": "PE",
+      "cidade": "ARARIPINA",
+      "sobre": "tgyuhjiok",
+      "foto": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgmSCAJWqFyMj6qGYcNsQmg7EKAA-bS6fIJMCYjyef5pmB0HL9KEt2mRQaF4zXpZ4HCjOWMfTn0u6bkKrRRPqfCFuEZhK6g9jue6y1qutG2A"
+    },
+    {
+      "id": "4687",
+      "nome": "Larissa Gomes Machado",
+      "especie": "Cachorro",
+      "sexo": "Fêmea",
+      "idade": "Adulto",
+      "porte": "Pequeno",
+      "estado": "PB",
+      "cidade": "AREIA",
+      "sobre": "",
+      "foto": "data:image/webp;base64,UklGRrAHAABXRUJQVlA4IKQHAABwNACdASriAJsAPuVyr1IpJ6QrotYq+XAciWcHDdYILHse68PwdRNli4RJYSBSxsyxPDr653mc4baio44askGSp0En9SZBetGuFdHpWTNL0MRXPL4GbMjDR+sPuH5omd5POvAcIhpQeAXzE853oSYijCyXwTjb7gX69wo6JhG9xwubO/OJfkuRRrk5HQx5AIdRvBBB8LhzSYJhl45LBlx6WvuhD8sYP1BI85bmkKPbxuljgrwPaW0TPOW035XBBvcihjiv36cujBhunHmT9DC7GLXSXiN1sPKScT+7mR8ZypL7sbSscF0DZk9sWiGk6UJRgw9kLifUjGNewr8wPK2kOqCaOVnWciR+YTck3WG+tnqp7IH4NWNxd2zIDcE4EbUsSyO078tWbTY3IKbt0KNH2uc3K//v9PuGKh3SaGbhQfsot8rHcubk+o8Lb6utXTg12zEF9Y85TVePYQ7z41PHtu/OjL569VuGvBlfdFFP8IE8yVXepkVJbbYwIqQpED0wVISK6u7ApRzPrRNM9nPS3sH/Coqf0WKjodfW3KcLf0PTAh45KVRvzFkKAAD+715AGGneoEGN07DkK7vYGf1CJB8opc/7T1DF09SXokSRoHpX61FPgtL6iXFfKqgRQuAEeZon5B/NhYCddQhscscPLpBrUrygjFvQrWOmA54kkUKBzpmUP4jJQ1A5K2SqKDlaNV/HcLXfLXIB+yEnnEUlHJlLKlCeBI95k+iqCptqbyFmWXQzZjlCTV4O/eBqhjHJ07aRsDSZIC/dh0srejjxlWCSZkamJiv6tLVqFfEb1h4g3r/Tb4iLMMn/IokIERh8wKUbSsUXGeGCd4zm7cGACt4KHZKkyvNgmctYNsDM2FrkDZ0BlbldZ/GYq2rdsucLbKeCvKAB28Mdu6A12ylWA6BPH3yQNXo3rmyJUPrZewFnzkYqcO5EposlAYDtuzrOKj6tlQU3xRxSn"
+    }
+  ]
+}

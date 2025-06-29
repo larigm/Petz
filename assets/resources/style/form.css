@@ -43,7 +43,6 @@
   padding: 15px;
 }
 
-
 .btn-outline-primary {
   color: #17479E !important;
   border: 2px solid #17479E !important;
@@ -91,61 +90,98 @@
   }
 }
 
-/* formulario */
-    .top-bar {
-      background-color: #c8b4d9;
-      height: 200px;
-      color: #5e4b6e;
-      text-align: center;
-      padding-top: 20px;
-    }
+/* ===== FORMULÁRIO ===== */
+.top-bar {
+  background-color: #c8b4d9;
+  height: 200px;
+  color: #5e4b6e;
+  text-align: center;
+  padding-top: 20px;
+}
 
-    .form-container {
-      margin-top: -100px;
-      background-color: white;
-      border-radius: 15px;
-      box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
-      padding: 30px;
-      max-width: 600px;
-    }
+.form-container {
+  margin-top: -100px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 600px;
+}
 
-    .form-label {
-      font-weight: 600;
-    }
+.form-label {
+  font-weight: 600;
+}
 
-    .form-control, .form-select {
-      background-color: #f1f1f1;
-      border: none;
-         color: #808080;
-    }
+.form-control,
+.form-select {
+  background-color: #f1f1f1;
+  border: none;
+  color: #808080;
+}
 
-    .form-control:focus, .form-select:focus {
-      box-shadow: none;
-      border: 1px solid #ccc;
-    }
+.form-control:focus,
+.form-select:focus {
+  box-shadow: none;
+  border: 1px solid #ccc;
+}
 
-    .btn-orange {
-      background-color: #f9a870;
-      color: white;
-      font-weight: 600;
-      border: none;
-    }
+.btn-orange {
+  background-color: #f9a870  !important;
+  color: white  !important;
+  font-weight: 600  !important;
+  border: none  !important;
+}
 
-    .btn-orange:hover {
-      background-color: #e69054;
-    }
+.btn-orange:hover {
+  background-color: #ffffff  !important;
+  color: #f9a870  !important;
+}
 
-    .top-links {
-      font-size: 14px;
-      padding-top: 10px;
-    }
+.top-links {
+  font-size: 14px;
+  padding-top: 10px;
+}
 
-    .top-links a {
-      color: white;
-      text-decoration: none;
-      margin: 0 5px;
-    }
+.top-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+}
 
-    .top-links a:hover {
-      text-decoration: underline;
-    }
+.top-links a:hover {
+  text-decoration: underline;
+}
+
+/* ===== RESPONSIVIDADE TIPOGRAFIA ===== */
+@media (max-width: 576px) {
+  .top-bar {
+    height: 160px;
+    font-size: 1rem;
+  }
+
+  .form-container {
+    padding: 20px;
+  }
+
+  .form-label {
+    font-size: 0.95rem;
+  }
+
+  .form-control,
+  .form-select {
+    font-size: 0.9rem;
+  }
+
+  .btn-orange {
+    font-size: 0.9rem;
+    padding: 10px 12px;
+  }
+
+  .top-links {
+    font-size: 12px;
+  }
+
+  .duvida {
+    font-size: 10px;
+  }
+}
