@@ -77,6 +77,12 @@
   background-color: #17408B;
   border-radius: 2px;
 }
+.navbar {
+  z-index: 1050;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
 @media (max-width: 991px) {
   .navbar-collapse.show {

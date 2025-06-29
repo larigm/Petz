@@ -34,6 +34,16 @@
 }
 
 /* ===== NAVBAR / BOTÕES ===== */
+.navbar {
+  z-index: 1050;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+body {
+  padding-top: 50px; /* ajuste se necessário */
+}
+
 .btn-outline-primary {
   color: #17479E !important;
   border: 2px solid #17479E !important;
@@ -85,6 +95,7 @@
 .container-petz {
   font-weight: normal;
   color: #757575;
+  
 }
 
 h1 {
@@ -92,6 +103,7 @@ h1 {
   font-family: 'Mulish', sans-serif;
   font-weight: lighter;
   font-size: 30px;
+  
 }
 
 p, .card-text, .card-title {
