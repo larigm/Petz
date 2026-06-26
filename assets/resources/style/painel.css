@@ -1,0 +1,81 @@
+body {
+  font-family: 'Mulish', sans-serif;
+  background-color: #f8f9fa; /* Um cinza bem claro */
+}
+
+/* ===== CARDS ===== */
+.card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* ===== BOTÕES ===== */
+
+/* Botão "Ver detalhes" no card */
+.btn-details {
+  background-color: transparent;
+  border: 1px solid #F9A870;
+  color: #F9A870;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-details:hover {
+  background-color: #F9A870;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Botão "Quero adotar" dentro do modal */
+.btn-adopt {
+  background-color: #F9A870;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 12px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-adopt:hover {
+  background-color: #f39340;
+}
+
+/* Botão "Excluir" dentro do modal */
+.btn-delete {
+  background-color: transparent;
+  color: #dc3545;
+  font-weight: 600;
+  border: 1px solid #dc3545;
+  padding: 12px;
+  transition: all 0.2s ease;
+}
+
+.btn-delete:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* ===== RESPONSIVIDADE PARA TIPOGRAFIA ===== */
+@media (max-width: 576px) {
+  .modal-body h3 {
+    font-size: 1.3rem;
+  }
+
+  .modal-body p {
+    font-size: 0.95rem;
+  }
+
+  .btn-adopt,
+  .btn-delete {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .btn-details {
+    font-size: 0.9rem;
+  }
+}
