@@ -69,7 +69,7 @@ $(function () {
   .insert(animal);
 console.log(data);
 console.log(error);
-if (error) throw new Error();
+if (error) throw error();
 
       msgSucesso.show();
       this.reset();
