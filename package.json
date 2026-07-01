@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/larigm/Petz#readme",
   "dependencies": {
+    "@supabase/supabase-js": "^2.110.0",
     "animate.css": "^4.1.1",
     "jquery": "^3.7.1"
   },

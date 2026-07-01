@@ -1,3 +1,4 @@
+
 $(function () {
   const form = $('#cadastroFormulario'),
         msgSucesso = $('#mensagem-sucesso'),
@@ -63,22 +64,22 @@ $(function () {
     };
 
     try {
-      const res = await fetch('http://localhost:3000/animais', {
-        method: 'POST',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify(animal)
-      });
-
-      if (!res.ok) throw new Error();
+      const { data, error } = await supabaseClient
+  .from('animais')
+  .insert(animal);
+console.log(data);
+console.log(error);
+if (error) throw new Error();
 
       msgSucesso.show();
       this.reset();
       form.removeClass('was-validated');
       cidade.html('<option value="" disabled selected>Cidade*</option>').prop('disabled', true);
       setTimeout(() => msgSucesso.fadeOut(), 7000);
-    } catch {
-      msgErro.text('Erro ao enviar para o servidor').show();
-    }
+    }catch (erro) {
+  console.log(erro);
+  msgErro.text('Erro ao enviar').show();
+}
   });
 
   popularEstados();

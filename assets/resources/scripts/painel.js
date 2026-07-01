@@ -1,14 +1,15 @@
 $(function () {
-  const apiUrl = 'http://localhost:3000/animais';
   const container = $('#cards-container');
   const modal = new bootstrap.Modal($('#modalDetalhes')[0]);
 
   const carregarAnimais = async () => {
     container.html('<p class="text-center text-muted my-5">Carregando pets...</p>');
     try {
-      const res = await fetch(apiUrl);
-      if (!res.ok) throw new Error();
-      const animais = await res.json();
+      const { data: animais, error } = await supabaseClient
+      .from('animais')
+      .select('*');
+          if (error) throw error;
+    
       if (!animais.length) container.html('<p class="text-center text-muted my-5">Nenhum pet disponível.</p>');
       else {
         container.empty();
@@ -33,9 +34,13 @@ $(function () {
 
   const abrirModal = async (id) => {
     try {
-      const res = await fetch(`${apiUrl}/${id}`);
-      if (!res.ok) throw new Error();
-      const a = await res.json();
+      const { data: a, error } = await supabaseClient
+      .from('animais')
+      .select('*')
+      .eq('id', id)
+      .single();
+
+    if (error) throw error;
       $('#modalFoto').attr('src', a.foto || 'https://via.placeholder.com/400x300');
       $('#modalNome').text(a.nome);
       $('#modalEspecie').text(a.especie);
@@ -54,11 +59,16 @@ $(function () {
   const excluirAnimal = async (id, nome) => {
     if (!confirm(`Excluir "${nome}"?`)) return;
     try {
-      const res = await fetch(`${apiUrl}/${id}`, { method: 'DELETE' });
-      if (!res.ok) throw new Error();
+       const { data: a, error } = await supabaseClient
+      .from('animais')
+      .delete()
+      .eq('id', id)
+    if (error) throw error;
+    document.activeElement.blur();
       modal.hide();
       carregarAnimais();
-    } catch {
+    } catch(erro) {
+      console.log(erro);
       alert('Erro ao excluir cadastro.');
     }
   };
