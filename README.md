@@ -5,9 +5,10 @@
 
 link youtube: https://youtu.be/apVop2BD-J4
   **Design System:**
-Link para o PDF
+https://www.figma.com/design/PoEVZqFb6xVtEsIIuaDUAR/adote-petz?node-id=5-1150&t=hmYqDDtnE6ehp7KB-1
 
 **Site em Produção - GitHub Pages**
+https://larigm.github.io/Petz/
 
 **Framework CSS**
 
